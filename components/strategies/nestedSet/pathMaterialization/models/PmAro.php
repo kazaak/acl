@@ -16,6 +16,9 @@
  */
 class PmAro extends PmAclObject
 {
+    protected $sequenceFields = array(
+        'id' => '{{seq_aro_collection_id}}'
+    );
     
     /**
      * Grants the given actions to the given object

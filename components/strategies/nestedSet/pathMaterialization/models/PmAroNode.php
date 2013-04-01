@@ -8,6 +8,10 @@
  * @package acl.strategies.nestedSet.pathMaterialiization
  */
 class PmAroNode extends PmAclNode{
+    protected $sequenceFields = array(
+        'id' => '{{seq_aro_id}}'
+    );
+
     /**
      * Returns the static model of the specified AR class.
      * @param string $className active record class name.

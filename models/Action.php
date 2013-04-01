@@ -21,6 +21,9 @@
  */
 class Action extends CActiveRecord
 {
+    protected $sequenceFields = array(
+        'id' => '{{seq_action_id}}'
+    );
     
     public $id;
     public $name;

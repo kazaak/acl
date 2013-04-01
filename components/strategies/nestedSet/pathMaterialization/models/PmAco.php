@@ -10,6 +10,9 @@
  */
 class PmAco extends PmAclObject
 {
+    protected $sequenceFields = array(
+        'id' => '{{seq_aco_collection_id}}'
+    );
     
     /**
       * This takes care of the aro/aco specifis for calling business-rules
