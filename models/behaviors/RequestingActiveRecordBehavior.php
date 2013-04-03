@@ -1,6 +1,6 @@
 <?php
 
-Yii::import('acl.models.behaviors.*');
+Yii::import('application.modules.acl.models.behaviors.*');
 
 /**
  * RequestingActiveRecordBehavior Class File

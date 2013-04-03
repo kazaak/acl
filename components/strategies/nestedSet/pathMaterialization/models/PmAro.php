@@ -16,10 +16,6 @@
  */
 class PmAro extends PmAclObject
 {
-    protected $sequenceFields = array(
-        'id' => '{{seq_aro_collection_id}}'
-    );
-    
     /**
      * Grants the given actions to the given object
      * @param mixed $obj any valid identifier
@@ -269,7 +265,7 @@ class PmAro extends PmAclObject
      */
     public function tableName()
     {
-        return '{{aro_collection}}';
+        return '{{ARO_COLLECTION}}';
     }
 
     /**

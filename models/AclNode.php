@@ -8,7 +8,7 @@
  * @package acl.base
  * @license LGPLv2
  */
-abstract class AclNode extends COracleActiveRecord{
+abstract class AclNode extends CActiveRecord{
     /**
      * This will take over the permissions of another node belonging to the same
      * AclObject, if the record is a new one

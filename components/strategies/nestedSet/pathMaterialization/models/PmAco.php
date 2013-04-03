@@ -10,10 +10,6 @@
  */
 class PmAco extends PmAclObject
 {
-    protected $sequenceFields = array(
-        'id' => '{{seq_aco_collection_id}}'
-    );
-    
     /**
       * This takes care of the aro/aco specifis for calling business-rules
       * @param  string  the Rule
@@ -39,7 +35,7 @@ class PmAco extends PmAclObject
      */
     public function tableName()
     {
-        return '{{aco_collection}}';
+        return '{{ACO_COLLECTION}}';
     }
 
     /**

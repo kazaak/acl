@@ -10,10 +10,6 @@
  */
 class PmAcoNode extends PmAclNode{
 
-    protected $sequenceFields = array(
-        'id' => '{{seq_aco_id}}'
-    );
-
     /**
      * @return string the associated database table name
      */

@@ -229,7 +229,7 @@ abstract class AclObject extends CActiveRecord{
                 }
                 else{
                     $obj = new $model;
-                    $obj->alias   = $identifier;
+                    $obj->ALIAS   = $identifier;
                     $obj->save();
                     
                     $objects = $onlyFirst ? $obj : array($obj);
@@ -254,8 +254,8 @@ abstract class AclObject extends CActiveRecord{
                 }
                 else{
                     $obj = new $model;
-                    $obj->foreign_key   = $identifier['foreign_key'];
-                    $obj->model         = $identifier['model'];
+                    $obj->FOREIGN_KEY   = $identifier['foreign_key'];
+                    $obj->MODEL         = $identifier['model'];
                     $obj->save();
                     
                     $objects = $onlyFirst ? $obj : array($obj);
@@ -392,7 +392,7 @@ abstract class AclObject extends CActiveRecord{
           */
          if(!is_callable($virtual)){
              //If it doesn't have an alias, we're fast off
-             if($this->alias == NULL)
+             if($this->ALIAS == NULL)
                  return false;
              
              return in_array($this->alias, $virtual);

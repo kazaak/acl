@@ -137,12 +137,12 @@ abstract class PmAclObject extends AclObject{
          $class = Util::getNodeNameOfObject($this);
           //First, create the node itself and place it in the tree
         $node = new $class();
-        $node->collection_id = $this->id;
+        $node->COLLECTION_ID = $this->ID;
         
         if($parent !== NULL)
-            $node->path = PmPathManager::appendToPath($parent->path, $parent->id);
+            $node->PATH = PmPathManager::appendToPath($parent->PATH, $parent->ID);
         else
-            $node->path = PmPathManager::getSeparator();
+            $node->PATH = PmPathManager::getSeparator();
 
         
         if(!$node->save())
